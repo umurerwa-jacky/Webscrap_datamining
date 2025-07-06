@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Statistical Learning - Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #16a085;
+        }
+        .book-overview {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 30px;
+        }
+        .toc {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin-bottom: 8px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .chapter {
+            margin-bottom: 40px;
+        }
+        .github-link {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .github-link:hover {
+            background: #1a252f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Introduction to Statistical Learning</h1>
+            <p>Comprehensive Summary of Covered Chapters</p>
+        </header>
+
+        <section class="book-overview">
+            <h2>Book Overview</h2>
+            <p>"Introduction to Statistical Learning" provides an accessible overview of the field of statistical learning, an essential toolset for making sense of complex datasets. The book presents fundamental concepts and techniques in statistical learning, including both supervised and unsupervised learning approaches. It covers a wide range of topics from linear regression to deep learning, with an emphasis on practical applications and intuitive explanations rather than heavy mathematical theory. This makes it an invaluable resource for students and professionals looking to understand and apply statistical learning methods to real-world problems.</p>
+        </section>
+
+        <section class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#chapter1">1. Introduction</a></li>
+                <li><a href="#chapter2">2. Linear Regression</a></li>
+                <li><a href="#chapter3">3. Classification</a></li>
+                <li><a href="#chapter4">4. Resampling Methods</a></li>
+                <li><a href="#chapter5">5. Linear Model Selection and Regularization</a></li>
+                <li><a href="#chapter6">6. Tree Based Methods</a></li>
+                <li><a href="#chapter7">7. Support Vector Machine</a></li>
+                <li><a href="#chapter8">8. Deep Learning</a></li>
+                <li><a href="#chapter9">9. Unsupervised Learning</a></li>
+                <li><a href="#chapter10">10. Text Mining</a></li>
+            </ul>
+        </section>
+
+        <section id="chapter1" class="chapter">
+            <h2>1. Introduction</h2>
+            <h3>Main Ideas</h3>
+            <p>The introductory chapter provides a broad overview of statistical learning, distinguishing between supervised and unsupervised learning. It introduces key concepts like model training, prediction, and the bias-variance trade-off. The chapter also discusses the importance of model interpretability versus prediction accuracy.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Supervised vs. unsupervised learning</li>
+                <li>Parametric vs. non-parametric methods</li>
+                <li>Model assessment and selection</li>
+                <li>Bias-variance tradeoff</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Understanding the fundamental concepts of statistical learning is crucial before diving into specific methods. The choice between model interpretability and flexibility depends on the problem context.</p>
+        </section>
+
+        <section id="chapter2" class="chapter">
+            <h2>2. Linear Regression</h2>
+            <h3>Main Ideas</h3>
+            <p>Linear regression is a simple but powerful approach for predicting a quantitative response. The chapter covers both simple and multiple linear regression, discussing how to estimate coefficients, assess model accuracy, and understand the relationship between predictors and response.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Least squares estimation</li>
+                <li>Residual analysis</li>
+                <li>R-squared and other metrics</li>
+                <li>Qualitative predictors</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Linear regression provides an interpretable framework for understanding relationships between variables, though it makes strong assumptions about linearity and independence of predictors.</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/Ch02-statlearn-lab.ipynb" class="github-link">View Chapter 2 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter3" class="chapter">
+            <h2>3. Classification</h2>
+            <h3>Main Ideas</h3>
+            <p>This chapter introduces classification problems where the response variable is categorical. It covers several fundamental classification methods including logistic regression, linear discriminant analysis, and K-nearest neighbors.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Logistic regression</li>
+                <li>Linear Discriminant Analysis (LDA)</li>
+                <li>Quadratic Discriminant Analysis (QDA)</li>
+                <li>K-Nearest Neighbors (KNN)</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Different classification methods have different strengths depending on the data characteristics. While some provide probability estimates (logistic regression), others focus on direct classification (KNN).</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop%2FDatamining%20_labs%2Fchap3-linreg-lab.ipynb" class="github-link">View Chapter 3 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter4" class="chapter">
+            <h2>4. Resampling Methods</h2>
+            <h3>Main Ideas</h3>
+            <p>Resampling methods are essential tools for model assessment and improvement. This chapter covers cross-validation and the bootstrap, which allow estimation of test error rates and model variability without requiring a separate test set.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Validation set approach</li>
+                <li>Leave-one-out cross-validation (LOOCV)</li>
+                <li>k-fold cross-validation</li>
+                <li>The bootstrap method</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Resampling methods provide powerful ways to assess model performance and variability, with cross-validation being particularly useful for model selection.</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/ch4-classification-lab.ipynb" class="github-link">View Chapter 4 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter5" class="chapter">
+            <h2>5. Linear Model Selection and Regularization</h2>
+            <h3>Main Ideas</h3>
+            <p>This chapter explores methods to improve upon linear regression by either selecting a subset of predictors or shrinking coefficients. These approaches can significantly enhance model interpretability and prediction accuracy.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Subset selection (forward, backward, hybrid)</li>
+                <li>Ridge regression (L2 regularization)</li>
+                <li>Lasso regression (L1 regularization)</li>
+                <li>Elastic net</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Regularization methods help combat overfitting and can perform variable selection, leading to more interpretable models with potentially better predictive performance.</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/CH5-resample-lab.ipynb" class="github-link">View Chapter 5 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter6" class="chapter">
+            <h2>6. Tree Based Methods</h2>
+            <h3>Main Ideas</h3>
+            <p>Tree-based methods partition the feature space into simple regions, making predictions based on the average or majority of observations in each region. These methods are simple to understand and interpret.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Decision trees (regression and classification)</li>
+                <li>Bagging</li>
+                <li>Random forests</li>
+                <li>Boosting (especially gradient boosting)</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>While simple trees are easy to interpret, ensemble methods like random forests and boosting typically offer superior predictive performance at the cost of some interpretability.</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/ch6-Lab-%20Linear%20Models%20and%20Regularization%20Methods.ipynb" class="github-link">View Chapter 6 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter9" class="chapter">
+            <h2>7. Support Vector Machine</h2>
+            <h3>Main Ideas</h3>
+            <p>Support Vector Machines (SVMs) are powerful classifiers that find an optimal separating hyperplane between classes. They can handle non-linear decision boundaries using kernel tricks.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Maximal margin classifier</li>
+                <li>Support vector classifier</li>
+                <li>Support vector machine</li>
+                <li>Kernel methods (polynomial, radial basis function)</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>SVMs are particularly effective in high-dimensional spaces and cases where the number of dimensions exceeds the number of samples, though they can be computationally intensive.</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/Chap09-svm-lab.ipynb" class="github-link">View Chapter 7 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter8" class="chapter">
+            <h2>8. Deep Learning</h2>
+            <h3>Main Ideas</h3>
+            <p>Deep learning uses neural networks with multiple hidden layers to learn complex representations of data. These models have shown remarkable success in various domains, especially with unstructured data.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Feedforward neural networks</li>
+                <li>Backpropagation</li>
+                <li>Activation functions (ReLU, sigmoid, tanh)</li>
+                <li>Regularization in neural networks</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Deep learning models can automatically learn hierarchical feature representations but require large amounts of data and computational resources, and often act as "black boxes."</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/LAB%2008%20-baggboost.ipynb" class="github-link">View Chapter 8 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter9" class="chapter">
+            <h2>9. Unsupervised Learning</h2>
+            <h3>Main Ideas</h3>
+            <p>Unsupervised learning deals with finding patterns in data without pre-existing labels. The main approaches include clustering and dimensionality reduction.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Principal Component Analysis (PCA)</li>
+                <li>K-means clustering</li>
+                <li>Hierarchical clustering</li>
+                <li>DBSCAN</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Unsupervised learning is valuable for exploratory data analysis and can reveal hidden structures in data, though results can be more subjective than supervised methods.</p>
+            
+            <a href="http://localhost:8891/notebooks/Desktop/Datamining%20_labs/Chap09-svm-lab.ipynb" class="github-link">View Chapter 9 Notebook on GitHub</a>
+        </section>
+
+        <section id="chapter10" class="chapter">
+            <h2>10. Text Mining</h2>
+            <h3>Main Ideas</h3>
+            <p>Text mining applies statistical learning methods to unstructured text data. This involves transforming text into numerical representations that can be analyzed.</p>
+            
+            <h3>Key Techniques</h3>
+            <ul>
+                <li>Bag-of-words representation</li>
+                <li>TF-IDF (Term Frequency-Inverse Document Frequency)</li>
+                <li>Word embeddings</li>
+                <li>Topic modeling (LDA)</li>
+            </ul>
+            
+            <h3>Takeaways</h3>
+            <p>Text data requires specialized preprocessing and feature extraction techniques before standard statistical learning methods can be applied effectively.</p>
+            
+        </section>
+
+        <section>
+            <h2>Algorithms Summary</h2>
+            <h3>Regression Algorithms</h3>
+            <table>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>Description</th>
+                    <th>Strengths</th>
+                </tr>
+                <tr>
+                    <td>Linear Regression</td>
+                    <td>Models linear relationship between predictors and response</td>
+                    <td>Simple, interpretable, computationally efficient</td>
+                </tr>
+                <tr>
+                    <td>Ridge Regression</td>
+                    <td>Linear regression with L2 penalty on coefficients</td>
+                    <td>Reduces variance, handles multicollinearity</td>
+                </tr>
+                <tr>
+                    <td>Lasso Regression</td>
+                    <td>Linear regression with L1 penalty on coefficients</td>
+                    <td>Performs variable selection, creates sparse models</td>
+                </tr>
+                <tr>
+                    <td>Regression Trees</td>
+                    <td>Partitions feature space into regions with constant prediction</td>
+                    <td>Non-linear, handles mixed data types</td>
+                </tr>
+            </table>
+
+            <h3>Classification Algorithms</h3>
+            <table>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>Description</th>
+                    <th>Strengths</th>
+                </tr>
+                <tr>
+                    <td>Logistic Regression</td>
+                    <td>Models probability of class membership</td>
+                    <td>Provides probabilities, interpretable coefficients</td>
+                </tr>
+                <tr>
+                    <td>LDA/QDA</td>
+                    <td>Models class conditional distributions</td>
+                    <td>Works well when classes are well-separated</td>
+                </tr>
+                <tr>
+                    <td>Decision Trees</td>
+                    <td>Hierarchical partitioning of feature space</td>
+                    <td>Interpretable, handles non-linear relationships</td>
+                </tr>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>Ensemble of decision trees</td>
+                    <td>High accuracy, handles high dimensionality</td>
+                </tr>
+                <tr>
+                    <td>SVM</td>
+                    <td>Finds optimal separating hyperplane</td>
+                    <td>Effective in high dimensions, kernel trick</td>
+                </tr>
+            </table>
+
+            <h3>Unsupervised Algorithms</h3>
+            <table>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>Description</th>
+                    <th>Strengths</th>
+                </tr>
+                <tr>
+                    <td>K-means</td>
+                    <td>Partitions data into K clusters</td>
+                    <td>Simple, scalable to large datasets</td>
+                </tr>
+                <tr>
+                    <td>Hierarchical Clustering</td>
+                    <td>Creates tree of nested clusters</td>
+                    <td>No need to specify K, visual dendrogram</td>
+                </tr>
+                <tr>
+                    <td>PCA</td>
+                    <td>Finds directions of maximum variance</td>
+                    <td>Dimensionality reduction, visualization</td>
+                </tr>
+                <tr>
+                    <td>DBSCAN</td>
+                    <td>Density-based clustering</td>
+                    <td>Finds arbitrary shaped clusters, handles noise</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>Created for MSDA9223 Data Mining and Information Retrieval Course</p>
+            <p>Adventist University of Central Africa | Semester 2, 2024-2025</p>
+            <p>Last updated: July 6, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
